@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Mocha" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="Scene Nodes/;Visitors/;Core/;Shapes/;Drawing/;Extras/;Event Management/;Coordinate Systems/;" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../Debug/libMocha" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="Debug" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-W" />
+					<Add option="-g" />
+					<Add option="-O0" />
+					<Add option="-D_DEBUG" />
+					<Add option="-D_LIB" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="." />
+					<Add directory="../MapSystemCore" />
+					<Add directory="$(DEVIL)/include" />
+					<Add directory="$(FTGL)/src" />
+					<Add directory="$(FREETYPE)/Include" />
+					<Add directory="$(FREETYPE)/Include/Freetype2" />
+				</ResourceCompiler>
+			</Target>
+			<Target title="Release">
+				<Option output="../Release/libMocha" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="Release" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-W" />
+					<Add option="-DNDEBUG" />
+					<Add option="-D_LIB" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="." />
+					<Add directory="../MapSystemCore" />
+					<Add directory="$(DEVIL)/include" />
+					<Add directory="$(FTGL)/src" />
+					<Add directory="$(FREETYPE)/Include" />
+					<Add directory="$(FREETYPE)/Include/Freetype2" />
+				</ResourceCompiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="`pkg-config --cflags /usr/local/lib/pkgconfig/ftgl.pc`" />
+			<Add option="`pkg-config --cflags  gtkmm-2.4`" />
+			<Add option="`pkg-config --cflags  gtkglext-1.0`" />
+			<Add option="-DILUT_USE_OPENGL" />
+			<Add directory="." />
+			<Add directory="../MapSystemCore" />
+			<Add directory="/usr/include" />
+			<Add directory="/usr/include/freetype2" />
+		</Compiler>
+		<Unit filename="BoundAreaNode.cpp">
+			<Option virtualFolder="Scene Nodes/" />
+		</Unit>
+		<Unit filename="BoundAreaNode.h">
+			<Option virtualFolder="Scene Nodes/" />
+		</Unit>
+		<Unit filename="Circle.cpp">
+			<Option virtualFolder="Shapes/" />
+		</Unit>
+		<Unit filename="Circle.h">
+			<Option virtualFolder="Shapes/" />
+		</Unit>
+		<Unit filename="Color.cpp">
+			<Option virtualFolder="Drawing/" />
+		</Unit>
+		<Unit filename="Color.h">
+			<Option virtualFolder="Drawing/" />
+		</Unit>
+		<Unit filename="ContainerHelper.cpp">
+			<Option virtualFolder="Core/" />
+		</Unit>
+		<Unit filename="ContainerHelper.h">
+			<Option virtualFolder="Core/" />
+		</Unit>
+		<Unit filename="DOFNode.cpp">
+			<Option virtualFolder="Scene Nodes/" />
+		</Unit>
+		<Unit filename="DOFNode.h">
+			<Option virtualFolder="Scene Nodes/" />
+		</Unit>
+		<Unit filename="DevicePoint.cpp">
+			<Option virtualFolder="Coordinate Systems/" />
+		</Unit>
+		<Unit filename="DevicePoint.h">
+			<Option virtualFolder="Coordinate Systems/" />
+		</Unit>
+		<Unit filename="Drawable.cpp">
+			<Option virtualFolder="Drawing/" />
+		</Unit>
+		<Unit filename="Drawable.h">
+			<Option virtualFolder="Drawing/" />
+		</Unit>
+		<Unit filename="Drawing.cpp">
+			<Option virtualFolder="Drawing/" />
+		</Unit>
+		<Unit filename="Drawing.h">
+			<Option virtualFolder="Drawing/" />
+		</Unit>
+		<Unit filename="EventInterface.cpp">
+			<Option virtualFolder="Event Management/" />
+		</Unit>
+		<Unit filename="EventInterface.h">
+			<Option virtualFolder="Event Management/" />
+		</Unit>
+		<Unit filename="EventRegister.cpp">
+			<Option virtualFolder="Event Management/" />
+		</Unit>
+		<Unit filename="EventRegister.h">
+			<Option virtualFolder="Event Management/" />
+		</Unit>
+		<Unit filename="EventVisitor.cpp">
+			<Option virtualFolder="Visitors/" />
+		</Unit>
+		<Unit filename="EventVisitor.h">
+			<Option virtualFolder="Visitors/" />
+		</Unit>
+		<Unit filename="Font.cpp">
+			<Option virtualFolder="Drawing/" />
+		</Unit>
+		<Unit filename="Font.h">
+			<Option virtualFolder="Drawing/" />
+		</Unit>
+		<Unit filename="FontCache.cpp">
+			<Option virtualFolder="Drawing/" />
+		</Unit>
+		<Unit filename="FontCache.h">
+			<Option virtualFolder="Drawing/" />
+		</Unit>
+		<Unit filename="FunButton.cpp">
+			<Option virtualFolder="Extras/" />
+		</Unit>
+		<Unit filename="FunButton.h">
+			<Option virtualFolder="Extras/" />
+		</Unit>
+		<Unit filename="FunNode.cpp">
+			<Option virtualFolder="Extras/" />
+		</Unit>
+		<Unit filename="FunNode.h">
+			<Option virtualFolder="Extras/" />
+		</Unit>
+		<Unit filename="GeoNode.cpp">
+			<Option virtualFolder="Scene Nodes/" />
+		</Unit>
+		<Unit filename="GeoNode.h">
+			<Option virtualFolder="Scene Nodes/" />
+		</Unit>
+		<Unit filename="GraphVisitor.cpp">
+			<Option virtualFolder="Visitors/" />
+		</Unit>
+		<Unit filename="GraphVisitor.h">
+			<Option virtualFolder="Visitors/" />
+		</Unit>
+		<Unit filename="Image.cpp">
+			<Option virtualFolder="Drawing/" />
+		</Unit>
+		<Unit filename="Image.h">
+			<Option virtualFolder="Drawing/" />
+		</Unit>
+		<Unit filename="MapSystemNode.cpp">
+			<Option virtualFolder="Scene Nodes/" />
+		</Unit>
+		<Unit filename="MapSystemNode.h">
+			<Option virtualFolder="Scene Nodes/" />
+		</Unit>
+		<Unit filename="Mocha.cpp">
+			<Option virtualFolder="Core/" />
+		</Unit>
+		<Unit filename="Mocha.h">
+			<Option virtualFolder="Core/" />
+		</Unit>
+		<Unit filename="MochaException.cpp">
+			<Option virtualFolder="Core/" />
+		</Unit>
+		<Unit filename="MochaException.h">
+			<Option virtualFolder="Core/" />
+		</Unit>
+		<Unit filename="MochaObject.cpp">
+			<Option virtualFolder="Core/" />
+		</Unit>
+		<Unit filename="MochaObject.h">
+			<Option virtualFolder="Core/" />
+		</Unit>
+		<Unit filename="MochaTypes.h">
+			<Option virtualFolder="Core/" />
+		</Unit>
+		<Unit filename="Point.cpp">
+			<Option virtualFolder="Coordinate Systems/" />
+		</Unit>
+		<Unit filename="Point.h">
+			<Option virtualFolder="Coordinate Systems/" />
+		</Unit>
+		<Unit filename="ProjectionNode.cpp">
+			<Option virtualFolder="Scene Nodes/" />
+		</Unit>
+		<Unit filename="ProjectionNode.h">
+			<Option virtualFolder="Scene Nodes/" />
+		</Unit>
+		<Unit filename="Rectangle.cpp">
+			<Option virtualFolder="Shapes/" />
+		</Unit>
+		<Unit filename="Rectangle.h">
+			<Option virtualFolder="Shapes/" />
+		</Unit>
+		<Unit filename="RectangleBoundAreaNode.cpp">
+			<Option virtualFolder="Scene Nodes/" />
+		</Unit>
+		<Unit filename="RectangleBoundAreaNode.h">
+			<Option virtualFolder="Scene Nodes/" />
+		</Unit>
+		<Unit filename="RenderVisitor.cpp">
+			<Option virtualFolder="Visitors/" />
+		</Unit>
+		<Unit filename="RenderVisitor.h">
+			<Option virtualFolder="Visitors/" />
+		</Unit>
+		<Unit filename="RotateNode.cpp">
+			<Option virtualFolder="Scene Nodes/" />
+		</Unit>
+		<Unit filename="RotateNode.h">
+			<Option virtualFolder="Scene Nodes/" />
+		</Unit>
+		<Unit filename="ScaleNode.cpp">
+			<Option virtualFolder="Scene Nodes/" />
+		</Unit>
+		<Unit filename="ScaleNode.h">
+			<Option virtualFolder="Scene Nodes/" />
+		</Unit>
+		<Unit filename="SceneManager.cpp">
+			<Option virtualFolder="Core/" />
+		</Unit>
+		<Unit filename="SceneManager.h">
+			<Option virtualFolder="Core/" />
+		</Unit>
+		<Unit filename="SceneNode.cpp">
+			<Option virtualFolder="Scene Nodes/" />
+		</Unit>
+		<Unit filename="SceneNode.h">
+			<Option virtualFolder="Scene Nodes/" />
+		</Unit>
+		<Unit filename="Shape.cpp">
+			<Option virtualFolder="Shapes/" />
+		</Unit>
+		<Unit filename="Shape.h">
+			<Option virtualFolder="Shapes/" />
+		</Unit>
+		<Unit filename="TranslateNode.cpp">
+			<Option virtualFolder="Scene Nodes/" />
+		</Unit>
+		<Unit filename="TranslateNode.h">
+			<Option virtualFolder="Scene Nodes/" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
